@@ -1,4 +1,3 @@
-
 const characters = [
   {
     name: "脆脆",
@@ -60,27 +59,4 @@ window.onload = function () {
 };
 
 function renderIntro(ctx) {
-  ctx.fillStyle = "#2e1f45";
-  ctx.fillRect(0, 0, 800, 600);
-  ctx.fillStyle = "#fff";
-  ctx.font = "32px sans-serif";
-  ctx.textAlign = "center";
-  ctx.fillText("肉搏動物園 測試畫面", 400, 280);
-  ctx.font = "20px sans-serif";
-  ctx.fillText("請按任意鍵開始互毆戰", 400, 320);
-}
-
-function renderCharacterSelect(ctx) {
-  const c = characters[selectedIndex];
-  ctx.fillStyle = "#2e1f45";
-  ctx.fillRect(0, 0, 800, 600);
-  ctx.fillStyle = "#fff";
-  ctx.font = "28px sans-serif";
-  ctx.fillText("選擇你的角色", 400, 80);
-  ctx.font = "24px sans-serif";
-  ctx.fillText("名字：" + c.name, 400, 180);
-  ctx.fillText("種族：" + c.species, 400, 230);
-  ctx.fillText("武器：" + c.weapon, 400, 280);
-  ctx.font = "20px sans-serif";
-  ctx.fillText("← → 選擇角色，Enter 確認", 400, 400);
-}
+  ctx
